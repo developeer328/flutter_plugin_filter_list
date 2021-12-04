@@ -467,26 +467,26 @@ class _FilterListWidgetState<T> extends State<FilterListWidget<T>> {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              _controlButton(
-                  choiceChipLabel: '${widget.allButtonText}',
-                  onPressed: widget.enableOnlySingleSelection!
-                      ? null
-                      : () {
-                          setState(() {
-                            _selectedListData = List.from(_listData!);
-                          });
-                        },
-                  // textColor:
-                  textStyle: widget.controlButtonTextStyle ??
-                      Theme.of(context).textTheme.bodyText2!.copyWith(
-                          fontSize: 20,
-                          color: widget.enableOnlySingleSelection!
-                              ? Theme.of(context).dividerColor
-                              : Theme.of(context).primaryColor),
-                  radius: widget.buttonRadius),
-              SizedBox(
-                width: widget.buttonSpacing ?? 0,
-              ),
+              // _controlButton(
+              //     choiceChipLabel: '${widget.allButtonText}',
+              //     onPressed: widget.enableOnlySingleSelection!
+              //         ? null
+              //         : () {
+              //             setState(() {
+              //               _selectedListData = List.from(_listData!);
+              //             });
+              //           },
+              //     // textColor:
+              //     textStyle: widget.controlButtonTextStyle ??
+              //         Theme.of(context).textTheme.bodyText2!.copyWith(
+              //             fontSize: 20,
+              //             color: widget.enableOnlySingleSelection!
+              //                 ? Theme.of(context).dividerColor
+              //                 : Theme.of(context).primaryColor),
+              //     radius: widget.buttonRadius),
+              // SizedBox(
+              //   width: widget.buttonSpacing ?? 0,
+              // ),
               _controlButton(
                   choiceChipLabel: '${widget.resetButtonText}',
                   onPressed: () {
